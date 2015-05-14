@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
@@ -6,6 +6,10 @@
 -- Generation Time: May 06, 2015 at 08:17 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
+CREATE DATABASE `web_ban_hang`;
+
+USE `web_ban_hang`;
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
