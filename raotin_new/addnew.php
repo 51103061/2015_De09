@@ -5,10 +5,10 @@
 		$idcl= $_POST['idcl'];
 		$idloai= $_POST['idloai'];
 
-		$date=new DateTime(); //this returns the current date time
-		$result = $date->format('YYYY-mm-dd');
-		$krr = explode('-',$result);
-		$result1 = implode("",$krr);
+		$date=new DateTime(); 
+		$date2=date_format($date, 'Y-m-d');
+
+
 
 		$gia = $_POST['gia'];settype($gia,"int");
 		$urlhinh = $_POST['urlhinh'];$urlhinh = substr($urlhinh,32);
@@ -40,7 +40,7 @@
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 		} 
-	$stringsql = "INSERT INTO sanpham VALUES (0,0,'$idloai','$idcl','$tensp','$tensp','$mota','$result','$gia','$urlhinh',0,null,0)";
+	$stringsql = "INSERT INTO sanpham VALUES (0,0,'$idloai','$idcl','$tensp','$tensp','$mota','$date2','$gia','$urlhinh',0,null,0)";
 $sql = $stringsql;
 	
 if ($conn->query($sql) === TRUE) {
