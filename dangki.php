@@ -1,3 +1,9 @@
+<html>
+<head>
+<title>Dang Ky</title>
+
+</head>
+<body>
 <?php if(!($_SESSION["view"]==0)){
 		$_SESSION["view"]="0";	
 	}
@@ -242,3 +248,5 @@ $(document).ready(function (){
   
 </form>
 </div>
+</body>
+</html>
